@@ -13,89 +13,91 @@
 
 </head>
 <body>
-<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
-    <div class="wrapper wrapper--w790">
-        <div class="card card-5">
-            <div class="card-heading">
-                <h2 class="title">Registration Form</h2>
-            </div>
-            <div class="card-body">
-                <form method="POST">
-                    <div class="form-row m-b-55">
-                        <div class="name">Name</div>
-                        <div class="value">
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="first_name">
-                                        <label class="label--desc">first name</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="last_name">
-                                        <label class="label--desc">last name</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="name">Password</div>
-                        <div class="value">
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="password" name="password1">
-                                        <label class="label--desc">Password</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="password" name="password2">
-                                        <label class="label--desc">Check Password</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="name">Email</div>
-                        <div class="value">
-                            <div class="input-group">
-                                <input class="input--style-5" type="email" name="email">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row m-b-55">
-                        <div class="name">Phone</div>
-                        <div class="value">
-                            <div class="row row-refine">
-                                <div class="col-3">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="area_code">
-                                        <label class="label--desc">Area Code</label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="phone">
-                                        <label class="label--desc">Phone Number</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
-                    </div>
-                </form>
+<div class="auth">
+    <div class="auth__title">
+        <h2>Registration Form</h2>
+    </div>
+    <div class="auth__body">
+        <form method="POST">
+            <div class="auth__body__row">
+                <div class="auth__body__row__col">Name</div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="first_name">
+                    <label class="label__desc">first name</label>
+                </div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="last_name">
+                    <label class="label__desc">last name</label>
+                </div>
             </div>
-        </div>
+            <div class="auth__body__row">
+                <div class="auth__body__row__col">Password</div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="passw1">
+                    <label class="label__desc">Password</label>
+                </div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="passw2">
+                    <label class="label__desc">Re-enter password</label>
+                </div>
+            </div>
+            <div class="auth__body__row">
+                <div class="auth__body__row__col">Email</div>
+                <div class="auth__body__row__col">
+                    <input type="text" name="email">
+                    <label class="label__desc">E-Mail</label>
+                </div>
+            </div>
+            <div class="auth__body__row">
+                <div class="auth__body__row__col">Phone</div>
+                <div class="auth__body__row__col cl-sm">
+                    <input class="input__sm" type="text" name="phone">
+                    <label class="label__desc">Area code</label>
+                </div>
+                <div class="auth__body__row__col">
+                    <input class="" type="text" name="phone">
+                    <label class="label__desc">Phone Number</label>
+                </div>
+            </div>
+            <div class="auth__body__row">
+                <div class="auth__body__row__btn">
+                    <button type="submit">Register</button>
+                </div>
+
+            </div>
+        </form>
     </div>
 </div>
+<div class="auth auth__login">
+    <div class="auth__title">
+        <h2>Login Form</h2>
+    </div>
+    <div class="auth__body">
+        <form method="POST">
+            <div class="auth__body__row ">
+                <div class="auth__body__row__col">Email</div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="email">
+                    <label class="label__desc">E-Mail</label>
+                </div>
+            </div>
+            <div class="auth__body__row">
+                <div class="auth__body__row__col">Password</div>
+                <div class="auth__body__row__col">
+                    <input class="input__md" type="text" name="passw1">
+                    <label class="label__desc">Password</label>
+                </div>
+            </div>
 
+            <div class="auth__body__row">
+                <div class="auth__body__row__btn">
+                    <button type="submit">Login</button>
+                </div>
 
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
