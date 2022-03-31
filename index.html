@@ -1,297 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="UTF-8">
-    <title>Mobile Store</title>
-
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/main.css">
 
 </head>
 <body>
 
-<div class="top-bar">
-    <div class="wrapper">
-        <div class="top-bar__left">
-            <div class="top-bar__left__text">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Koktem 2, Almaty, KZ</p>
-            </div>
-            <div class="top-bar__left__text">
-                <i class="fas fa-phone-alt"></i>
-                <p>8 800 555 35 35</p>
-            </div>
-            <div class="top-bar__left__text">
-                <i class="far fa-envelope-open"></i>
-                <p>storestore@info.com</p>
-            </div>
+<div class="container-fluid p-2">
+    <div class="top-bar container-xl d-flex bd-highlight border-bottom">
+        <div class="p-2 flex-grow-1 bd-highlight">
+            <a href="">ENG
+                <i class="fa fa-angle-down"></i>
+            </a>
         </div>
-        <div class="top-bar__right">
-            <div class="top-bar__right__social">
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-vk"></i></a>
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-telegram-plane"></i></a>
-            </div>
-            <div class="top-bar__right__auth">
-                <a href="login.html" >
-                    <i class="far fa-user"></i>
-                    Login / Register
-                </a>
-            </div>
-            <div class="top-bar__right__wishlist">
-                <a href="">
-                    <i class="far fa-heart"></i>
-                </a>
-            </div>
-            <div class="top-bar__right__cart">
-                <a href="">
-                    <i class="fas fa-shopping-basket"></i>
-                </a>
-            </div>
-            <div class="top-bar__right__search">
-                <a href="">
-                    <i class="fas fa-search"></i>
-                </a>
-            </div>
+        <div class="p-2 bd-highlight border-end">
+            <i class="me-2 fas fa-phone-alt"></i>
+            8 800 555 35 35
+        </div>
+        <div class="p-2 bd-highlight"><a href="">Sign In</a></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="header container-xl d-flex bd-highlight align-items-center">
+        <div class="p-2 flex-grow-1 bd-highlight">
+            <a class="logo" href="">mobile+</a>
+        </div>
+        <div class="p-2 bd-highlight d-flex">
+            <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Search our catalog">
+            <button type="button" class="btn btn-outline-dark"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="p-2 bd-highlight">
+            <a href="">
+                <i class="fas fa-shopping-basket"></i>
+            </a>
         </div>
     </div>
 </div>
-
-<div class="menu">
-    <div class="wrapper">
-        <div class="menu__logo"><a href="">MOBILE+</a></div>
-        <div class="menu__links">
-            <a href="">home</a>
-            <div class="menu__links__dropdown">
-                <a href="" class="">shop <i class="fa fa-angle-down"></i></a>
-                <div class="menu__links__dropdown__menu">
-                    <a href="">Iphone</a>
-                    <a href="">Samsung</a>
-                    <a href="">OnePlus</a>
-                    <a href="">Huawei</a>
-                </div>
-            </div>
-            <div class="menu__links__dropdown">
-                <a href="" class="menu__links__dropdown">my account <i class="fa fa-angle-down"></i></a>
-                <div class="menu__links__dropdown__menu">
-                    <a href="">My account</a>
-                    <a href="">Wishlist</a>
-                    <a href="">Basket</a>
-                </div>
-            </div>
-            <a href="">faq</a>
-        </div>
-    </div>
-</div>
-
-<div class="special">
-    <div class="wrapper">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href=""><img src="img/iphone13pro.webp"></div>
-                </a>
-                <div class="swiper-slide"><a href=""><img src="img/0822-M020-23-samsung-galaxy-ultra-desktab.jpg"></a>
-                </div>
-                <div class="swiper-slide"><a href=""><img src="img/iphone13pro.webp"></a></div>
-                <div class="swiper-slide"><a href=""><img src="img/0822-M020-23-samsung-galaxy-ultra-desktab.jpg"></a>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <a href="">
-            <div class="banner"></div>
-        </a>
-    </div>
-</div>
-
-<div class="products">
-    <div class="wrapper">
-        <h2>Sample text</h2>
-        <div class="wrapper">
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class="products">
-    <div class="wrapper">
-        <h2>Sample text</h2>
-        <div class="wrapper">
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-            <div class="products__card">
-                <div class="products__card__img"></div>
-                <div class="products__card__info">
-                    <div class="products__card__info__desc">
-                        Smartphone Apple iPhone 12 128GB Red
-                    </div>
-                    <div class="products__card__info__price">
-                        600$
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="mmap">
-    <div class="map" id="map"></div>
-    <div class="map__info">
-        <div class="wrapper">
-            <p style="font-size: 30px">Contacts</p>
-            <div class="map__info__contacts">
-                <div class="map__info__contacts__item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p class="text__description">Kazakhstan, Almaty, Koktem 2,2</p>
-                </div>
-                <div class="map__info__contacts__item">
-                    <i class="fas fa-phone-alt"></i>
-                    <p class="text__description"><b>8 800 555 35 35</b></p>
-                </div>
-                <div class="map__info__contacts__item">
-                    <i class="far fa-envelope-open"></i>
-                    <p class="text__description">storestore@info.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<img style="display: none" src="img/mapIcon.png" alt="">
-
-
-<div class="footer">
-    <div class="footer__row">
-        <div class="footer__row__left footer_menu">
-            <a href="">iPhone</a>
+<div class="nav container-fluid">
+    <div class="nav-links container-xl d-flex bd-highlight align-items-center">
+        <div class="p-2 flex-grow-1 bd-highlight">
+            <a href="products/shop.html">Shop</a>
+            <a href="">Iphone</a>
             <a href="">Samsung</a>
-            <a href="">OnePlus</a>
-            <a href="">Huawei</a>
             <a href="">Xiaomi</a>
-            <a href="">Oppo</a>
-            <a href="">Vivo</a>
-            <a href="">Poco</a>
-            <a href="">Realme</a>
-            <a href="">Cases</a>
-            <a href="">Accessories</a>
-            <a href="">Headphones</a>
-        </div>
-        <div class="footer__row__right footer_right">
-            <div class="footer__row__right__box">
-                <p>E-mail: support@mobileplus.com</p>
-            </div>
+            <a href="">OnePlus</a>
 
-            <div class="footer__row__right__box">
-                <p>Working hours: Mn-Fr: 9:00 - 21:00</p>
-            </div>
         </div>
     </div>
-
-    <div class="footer__row">
-        <div class="footer__row__left">
-            <div class="menu__logo"><a href="">MOBILE+</a></div>
-        </div>
-        <div class="footer__row__right footer_right">
-            <div class="footer__row__right__box__imgs ">
-                <img src="img/visa.webp" alt="visa">
-                <img src="img/wayforpay.webp" alt="wayforpay">
-                <img src="img/mastercard.webp" alt="mastercard">
-            </div>
-            <div class="footer__row__right__box__imgs ">
-            </div>
-        </div>
+</div>
+<div class="banner container-fluid">
+    <div>
+        <h2 class="row">Apple products are 30% OFF</h2>
+        <h1 class="row">Are you ready?</h1>
+        <h2 class="btn-shop">Shop Now</h2>
     </div>
+</div>
+<div class="showcase container-fluid justify-content-center mt-5">
+    <h1>New Products</h1>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card text-black">
+                        <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img1.webp"
+                                class="card-img-top"
+                                alt="iPhone"
+                        />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone X</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $399</h6>
+                            </div>
 
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
 
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">5.8″</span>
+                                    <span>Super Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                <span class="h1 mb-0">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">—</li>
+                                        <li>Wide</li>
+                                        <li>Telephoto</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">2x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">256GB</span>
+                                    <span style="color: transparent;">0</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button
+                                        type="button"
+                                        class="btn btn-primary flex-fill me-1"
+                                        data-mdb-ripple-color="dark"
+                                >
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card text-black">
+                        <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img2.webp"
+                                class="card-img-top"
+                                alt="iPhone"
+                        />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone 11</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $499</h6>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">6.1″</span>
+                                    <span>Liquid Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                <span class="h1 mb-0">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">Ultra Wide</li>
+                                        <li>Wide</li>
+                                        <li aria-hidden="true">—</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">2x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">128GB</span>
+                                    <span>256GB</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button
+                                        type="button"
+                                        class="btn btn-primary flex-fill me-1"
+                                        data-mdb-ripple-color="dark"
+                                >
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                    <div class="card text-black">
+                        <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img3.webp"
+                                class="card-img-top"
+                                alt="iPhone"
+                        />
+                        <div class="card-body">
+                            <div class="text-center mt-1">
+                                <h4 class="card-title">iPhone 11 Pro</h4>
+                                <h6 class="text-primary mb-1 pb-3">Starting at $599</h6>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Quick Look</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">5.8″</span>
+                                    <span>Super Retina HD display1</span>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                <span class="h1 mb-0">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                                    <ul class="list-unstyled mb-0">
+                                        <li aria-hidden="true">Ultra Wide</li>
+                                        <li>Wide</li>
+                                        <li>Telephoto</li>
+                                        <li aria-hidden="true">—</li>
+                                    </ul>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="h1 mb-0">4x</span>
+                                    <span>Optical zoom range</span>
+                                </div>
+
+                                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                                    <h5 class="mb-0">Capacity</h5>
+                                </div>
+
+                                <div class="d-flex flex-column mb-4 lead">
+                                    <span class="mb-2">64GB</span>
+                                    <span class="mb-2">256GB</span>
+                                    <span>512GB</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <button
+                                        type="button"
+                                        class="btn btn-primary flex-fill me-1"
+                                        data-mdb-ripple-color="dark"
+                                >
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <h1 class="mb-50">Best Sellers</h1>
 </div>
 
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq2hP7Uwqcb-5ak1Mtckhdq0CAUuh0jIM&callback=initMap"></script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
